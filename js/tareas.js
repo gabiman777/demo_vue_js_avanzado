@@ -10,6 +10,7 @@ const procesarFormulario = (e) => {
     alert.classList.add("d-none");
 
     const datos = new FormData(formulario);
+    //todo es el texto de la tarea
     const [todo] = [...datos.values()];
 
     // validación campo vacío
