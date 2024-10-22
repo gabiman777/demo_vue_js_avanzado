@@ -28,3 +28,11 @@ npm run dev
 npm run build
 ```
 # demo_vue_js_avanzado
+
+Proyecto usado para tutorial de Vue.js y JS Avanzado
+
+Vue.js:
+https://www.youtube.com/watch?v=GAQB7Y4X5fM&list=PLPl81lqbj-4J-gfAERGDCdOQtVgRhSvIT&index=3
+
+JS avanzado:
+https://youtu.be/EYmNfsp1aPE
