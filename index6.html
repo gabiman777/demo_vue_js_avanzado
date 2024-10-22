@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Animación de barra</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="container text-center py-5">
+        <h1 id="titulo" class="display-4 py-5">Ciclo While</h1>
+        <div class="py-4">
+          <input type="number" id="numeroCiclos" class="form-control text-center" placeholder="Adivina el número...?">
+        </div>
+        <button id="boton" class="btn btn-success">Enviar</button>
+        <div id="resultado" class="py-4"></div>
+    </div>
+  </body>
+
+  <script>
+    document.getElementById("boton").onclick = function (){
+      var numeroCorrecto = 5;
+      var repeticiones = 1;
+      var detener = false;
+      var numeroUsuario = document.getElementById("numeroCiclos").value;
+      console.log(numeroUsuario);
+      
+      while (repeticiones <= numeroUsuario && !detener){
+
+        if (repeticiones > numeroCorrecto){
+          document.getElementById("resultado").innerHTML += "stop de ciclo";
+          detener = true; //se puede reemplazar por break (ruptura del ciclo)
+        }
+        else {
+          document.getElementById("resultado").innerHTML += "repetición número " + repeticiones + "</br>";
+          repeticiones++;
+        }
+      }
+
+    };
+  </script>
+</html>
