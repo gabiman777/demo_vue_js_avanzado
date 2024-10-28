@@ -50,6 +50,7 @@ const pintarTodos = () => {
 //botón eliminar
 document.addEventListener("click", (e) => {
     if (e.target.matches(".btn-danger")) {
+        console.log('diste click al botón eliminar');
         console.log(e.target.dataset.id);
         todos = todos.filter((item) => item.id !== e.target.dataset.id);
         pintarTodos();
